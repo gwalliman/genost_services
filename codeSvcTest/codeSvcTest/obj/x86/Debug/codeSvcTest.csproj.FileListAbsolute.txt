@@ -1,0 +1,6 @@
+C:\Users\Garret\Documents\My Dropbox\Master's Thesis\Code\genost_services\codeSvcTest\codeSvcTest\bin\Debug\codeSvcTest.exe
+C:\Users\Garret\Documents\My Dropbox\Master's Thesis\Code\genost_services\codeSvcTest\codeSvcTest\bin\Debug\codeSvcTest.pdb
+C:\Users\Garret\Documents\My Dropbox\Master's Thesis\Code\genost_services\codeSvcTest\codeSvcTest\obj\x86\Debug\codeSvcTest.exe
+C:\Users\Garret\Documents\My Dropbox\Master's Thesis\Code\genost_services\codeSvcTest\codeSvcTest\obj\x86\Debug\codeSvcTest.pdb
+C:\Users\Garret\Documents\My Dropbox\Master's Thesis\Code\genost_services\codeSvcTest\codeSvcTest\obj\x86\Debug\codeSvcTest.csprojResolveAssemblyReference.cache
+C:\Users\Garret\Documents\My Dropbox\Master's Thesis\Code\genost_services\codeSvcTest\codeSvcTest\bin\Debug\codeSvcTest.exe.config

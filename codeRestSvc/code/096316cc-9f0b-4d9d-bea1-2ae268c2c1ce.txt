@@ -1,0 +1,13 @@
+4-1-1_basic_if%{
+	if ( [ method getSonars  ( int 1 ) > int 30 ] )
+	{
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) > int 30 ] );
+		method driveDistance  ( int 200 );
+		method turnAngle  ( int 180 );
+		method driveDistance  ( int 250 );
+	}
+
+
+}
+

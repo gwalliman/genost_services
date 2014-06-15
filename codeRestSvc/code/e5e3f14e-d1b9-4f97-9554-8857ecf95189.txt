@@ -1,0 +1,11 @@
+3-2-3_wait_ffa%{
+	loopuntil ( [ method getSonars  ( int 1 ) > int 32 ] )
+	{
+		method drive  ( string "f" );
+		method stop ();
+	}
+	method turnAngle  ( int 90 );
+
+
+}
+

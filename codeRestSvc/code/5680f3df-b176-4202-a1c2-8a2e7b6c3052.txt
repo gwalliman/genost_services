@@ -1,0 +1,7 @@
+3-2-3_wait_ffa%{
+	waituntil ( [ method getSonars  ( int 1 ) > int 32 ] );
+	method drive  ( string "f" );
+
+
+}
+

@@ -1,0 +1,9 @@
+4-2-4_elementary%{
+	method drive  ( string "f" );
+	waitfor 4;
+	waituntil ( [ method getSonars  ( int 3 ) > method getSonars  ( int 5 )] );
+	method turnAngle  ( int 90 );
+
+
+}
+

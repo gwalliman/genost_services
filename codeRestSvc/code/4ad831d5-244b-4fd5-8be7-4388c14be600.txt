@@ -1,0 +1,10 @@
+2-2-7_infinity_beyond%{
+	loopfor -1
+	{
+		method driveDistance  ( int 256 );
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

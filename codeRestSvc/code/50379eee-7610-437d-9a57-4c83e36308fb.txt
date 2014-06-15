@@ -1,0 +1,7 @@
+4-2-4_elementary%{
+	method drive  ( string "f" );
+	waitfor 5;
+
+
+}
+

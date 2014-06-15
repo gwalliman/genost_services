@@ -1,0 +1,9 @@
+3-2-3_wait_ffa%{
+	method driveDistance  ( int 300 );
+	method driveDistance  ( int 90 );
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 600 );
+
+
+}
+

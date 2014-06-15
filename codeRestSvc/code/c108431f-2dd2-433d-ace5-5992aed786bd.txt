@@ -1,0 +1,10 @@
+3-1-1_hurry_wait%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	method stop ();
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 200 );
+
+
+}
+

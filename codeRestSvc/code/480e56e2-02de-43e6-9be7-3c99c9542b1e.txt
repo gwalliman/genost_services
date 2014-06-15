@@ -1,0 +1,7 @@
+4-2-4_elementary%{
+	method drive  ( string "f" );
+	waituntil ( [ [ method getSonars  ( int 3 ) > int 40 ]  or [ method getSonars  ( int 5 ) > int 40 ] ] );
+
+
+}
+

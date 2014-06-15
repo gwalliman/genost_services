@@ -1,0 +1,16 @@
+3-2-2_wait_for_test%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 11 ] );
+	method turnAngle  ( int -180 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 50 ] );
+	method driveDistance  ( int 6 );
+	method turnAngle  ( int 90 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 10 ] );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 1595160265024995100952915194 );
+
+
+}
+

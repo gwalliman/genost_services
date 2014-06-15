@@ -1,0 +1,11 @@
+3-2-2_wait_for_test%{
+	method drive  ( string "f" );
+	waitfor 6;
+	method turnAngle  ( int -90 );
+	waituntil ( [ method getSonars  ( int 1 ) < int 45 ] );
+	method turnAngle  ( int -90 );
+	method drive  ( string "f" );
+
+
+}
+

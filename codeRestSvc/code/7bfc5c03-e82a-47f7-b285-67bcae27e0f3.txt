@@ -1,0 +1,18 @@
+4-1-2_if_only%{
+	loopfor -1
+	{
+		method driveDistance  ( int 32 );
+		if ( [ method getSonars  ( int 1 ) < int 140 ] )
+		{
+			if ( [ method getSonars  ( int 5 ) < int 64 ] )
+			{
+				method driveDistance  ( int 40 );
+			}
+			method stop ();
+			waitfor 6000;
+		}
+	}
+
+
+}
+

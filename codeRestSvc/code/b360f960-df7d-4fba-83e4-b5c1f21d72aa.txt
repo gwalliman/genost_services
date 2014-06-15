@@ -1,0 +1,31 @@
+4-1-2_if_only%{
+	if ( [ method getSonars  ( int 5 ) > int 50 ] )
+	{
+		method turnAngle  ( int -90 );
+	}
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 50 ] );
+	waitfor 1;
+	method turnAngle  ( int -90 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 50 ] );
+	method turnAngle  ( int 180 );
+	method driveDistance  ( int 200 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 50 ] );
+	waitfor 1;
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 70 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 5 ) > int 50 ] );
+	waitfor 1;
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 70 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 50 ] );
+	method drive  ( string "b" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 100 ] );
+
+
+}
+

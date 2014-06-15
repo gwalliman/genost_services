@@ -1,0 +1,13 @@
+4-2-1_basic_else_if%{
+	if ( [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] )
+	{
+		method turnAngle  ( int -90 );
+	}
+	else
+	{
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

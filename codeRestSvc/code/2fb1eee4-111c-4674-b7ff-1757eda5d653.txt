@@ -1,0 +1,12 @@
+2-1-1_loopy_corners%{
+	loopfor 3
+	{
+		method driveDistance  ( int 150 );
+		method turnAngle  ( int -90 );
+		method driveDistance  ( int 150 );
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

@@ -1,0 +1,14 @@
+3-2-1_intro_wait_for%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 50 ] );
+	method turnAngle  ( int 90 );
+	waituntil ( [ method getSonars  ( int 1 ) > int 50 ] );
+	method drive  ( string "b" );
+	method turnAngle  ( int 90 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 50 ] );
+	method stop ();
+
+
+}
+

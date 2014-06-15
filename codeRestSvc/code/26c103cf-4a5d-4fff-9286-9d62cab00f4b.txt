@@ -1,0 +1,9 @@
+default_maze1%{
+	loopfor -1
+	{
+		method driveDistance  ( int 2 );
+	}
+
+
+}
+

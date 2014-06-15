@@ -1,0 +1,22 @@
+4-1-2_if_only%{
+	method driveDistance  ( int 69 );
+	loopfor 2
+	{
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 3 ) > int 85 ] );
+		waitfor 1;
+		method turnAngle  ( int 90 );
+		method driveDistance  ( int 64 );
+	}
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 40 ] );
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 96 );
+	method turnAngle  ( int 180 );
+	method driveDistance  ( int 364 );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 288 );
+
+
+}
+

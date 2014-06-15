@@ -1,0 +1,23 @@
+4-2-4_elementary%{
+	loopfor -1
+	{
+		method driveDistance  ( int 96 );
+		if ( [ method getSonars  ( int 3 ) > method getSonars  ( int 5 )] )
+		{
+			method turnAngle  ( int 90 );
+			method driveDistance  ( int 96 );
+			method driveDistance  ( int -96 );
+			method turnAngle  ( int -90 );
+		}
+		elseif ( [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] )
+		{
+			method turnAngle  ( int -90 );
+			method driveDistance  ( int 96 );
+			method driveDistance  ( int -96 );
+			method turnAngle  ( int 90 );
+		}
+	}
+
+
+}
+

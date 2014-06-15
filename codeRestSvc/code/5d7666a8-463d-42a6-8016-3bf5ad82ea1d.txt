@@ -1,0 +1,10 @@
+default_maze1%{
+	loopfor 4
+	{
+		method driveDistance  ( int 270 );
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

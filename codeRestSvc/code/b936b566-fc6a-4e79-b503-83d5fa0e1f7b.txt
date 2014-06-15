@@ -1,0 +1,22 @@
+4-2-4_elementary%{
+	method drive  ( string "f" );
+	waituntil ( [ [ method getSonars  ( int 3 ) > int 40 ]  or [ method getSonars  ( int 5 ) > int 40 ] ] );
+	if ( [ method getSonars  ( int 3 ) > method getSonars  ( int 5 )] )
+	{
+		method turnAngle  ( int 90 );
+		method driveDistance  ( int 96 );
+		method turnAngle  ( int -90 );
+		method driveDistance  ( int 64 );
+		method turnAngle  ( int -90 );
+		method driveDistance  ( int 96 );
+		method turnAngle  ( int 90 );
+	}
+	elseif ( [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] )
+	{
+		method driveDistance  ( int -96 );
+		method driveDistance  ( int -96 );
+	}
+
+
+}
+

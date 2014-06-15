@@ -1,0 +1,12 @@
+3-2-3_wait_ffa%{
+	loopfor 2
+	{
+		method driveDistance  ( int 580 );
+		method turnAngle  ( int 90 );
+		method driveDistance  ( int 520 );
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

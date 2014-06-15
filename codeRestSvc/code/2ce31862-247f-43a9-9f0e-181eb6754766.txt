@@ -1,0 +1,7 @@
+3-2-2_wait_for_test%{
+	waituntil ( [ method getSonars  ( int 1 ) < int 50 ] );
+	method turnAngle  ( int -90 );
+
+
+}
+

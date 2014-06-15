@@ -1,0 +1,13 @@
+default_maze1%{
+	loopuntil ( [ method getSonars  ( int 1 ) < int 32 ] )
+	{
+		method drive  ( string "f" );
+		waitfor 2;
+		waituntil ( [ method getSonars  ( int 3 ) > int 64 ] );
+		waitfor 1;
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

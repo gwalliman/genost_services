@@ -1,0 +1,11 @@
+4-1-4_if_all_else%{
+	loopfor 4
+	{
+		method drive  ( string "f" );
+		waituntil ( [ int 10  > method getSonars  ( int 1 )] );
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

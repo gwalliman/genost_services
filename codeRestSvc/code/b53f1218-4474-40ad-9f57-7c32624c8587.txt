@@ -1,0 +1,7 @@
+2-1-5_loop_ffa%{
+	method driveDistance  ( int 50 );
+	method turnAngle  ( int -90 );
+
+
+}
+

@@ -1,0 +1,12 @@
+4-3-1_elementary_deaux%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 40 ] );
+	method driveDistance  ( int 10 );
+	method turnAngle  ( int 90 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	method turnAngle  ( int 90 );
+
+
+}
+

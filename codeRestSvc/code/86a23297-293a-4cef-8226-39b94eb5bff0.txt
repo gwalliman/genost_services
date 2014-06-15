@@ -1,0 +1,11 @@
+4-1-2_if_only%{
+	if ( [ method getSonars  ( int 3 ) > int 150 ] )
+	{
+		method turnAngle  ( int -90 );
+		method driveDistance  ( int -95 );
+	}
+	waituntil ( [ method getSonars  ( int 1 ) > int 32 ] );
+
+
+}
+

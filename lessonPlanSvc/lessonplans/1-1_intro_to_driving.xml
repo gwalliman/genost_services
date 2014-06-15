@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BlockDefinitions>
+  <Package name ="DATA">
+    <Block>
+      <name>INT</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>INT</string>
+        <textbox>INT</textbox>
+      </contains>
+      <properties>
+        <color>239 228 176</color>
+        <isConstant>true</isConstant>
+        <hasSocks>true</hasSocks>
+        <returnType>INT</returnType>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="VARIABLES">
+    <Block>
+      <name>VARIABLE</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>var</string>
+        <string>varName</string>
+      </contains>
+      <properties>
+        <color>255 174 201</color>
+        <programOnly>true</programOnly>
+        <isCustom>true</isCustom>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="PARAMETERS">
+    <Block>
+      <name>PARAMETER</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>parType</string>
+        <string>parName</string>
+      </contains>
+      <properties>
+        <color>182 220 163</color>
+        <programOnly>true</programOnly>
+        <isCustom>true</isCustom>
+      </properties>
+    </Block>
+    <Block>
+      <name>RETURN</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>RETURN</string>
+        <!--<string>parType</string>-->
+        <socket>VARIABLE/METHOD/CONSTANT/PARAMETER</socket>
+      </contains>
+      <properties>
+        <color>182 220 163</color>
+        <programOnly>true</programOnly>
+        <hasSocks>true</hasSocks>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="METHODS">
+    <Block>
+      <name>METHOD</name>
+      <type>STATEMENT/PLUGIN</type>
+      <contains>
+        <string>method</string>
+        <string>methName</string>
+        <parameterList>SOCKET</parameterList>
+      </contains>
+      <properties>
+        <color>182 220 163</color>
+        <programOnly>true</programOnly>
+        <isCustom>true</isCustom>
+        <transformer>true</transformer>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="DRIVE">
+    <block>
+      <name>DRIVEDISTANCE</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>DRIVE&#13;DISTANCE</string>
+        <socket>INT</socket>
+      </contains>
+      <properties>
+        <color>249 243 127</color>
+        <robotOnly>true</robotOnly>
+        <hasSocks>true</hasSocks>
+      </properties>
+    </block>
+  </Package>
+  <mazeid>1-1_intro_to_driving</mazeid>
+</BlockDefinitions>
+
+
+
+<!--
+Notes:
+BlockDefinitions is the root of the tree. From there, we define packages, and blocks inside those packages.
+Blocks contain a name, type, contains element, and properties element. 
+  -Name is a string representing the block in the program.
+  -Type is either STATEMENT or PLUGIN, and determines broadly where it can be placed in the program.
+  -Contains holds the list of displayed elements of the block. E.g. in an if block, it'd have the prompt "If", followed by the sockets for a conditional.
+    -socket elements contain a string representing what is allowed in them (e.g. VARIABLE, or VARIABLE/METHOD/CONSTANT)
+  -Properties holds various data or true/false flags. This determines aspects like limiting its behavior, or refining where it can be placed, etc.
+    -Ideally properties should all be optional, except for maybe the block's display color. 
+    
+    
+-motorfunctions is a placeholder, sensor functions are TBD
+-->

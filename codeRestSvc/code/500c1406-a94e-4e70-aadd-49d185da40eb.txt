@@ -1,0 +1,32 @@
+4-2-2_else_if_test%{
+	if ( [ method getSonars  ( int 1 ) > method getSonars  ( int 5 )] )
+	{
+		if ( [ method getSonars  ( int 1 ) > method getSonars  ( int 3 )] )
+		{
+			if ( [ method getSonars  ( int 1 ) > method getSonars  ( int 4 )] )
+			{
+			}
+			method turnAngle  ( int 0 );
+		}
+		else
+		{
+			method turnAngle  ( int 90 );
+		}
+	}
+	elseif ( [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] )
+	{
+		if ( [ method getSonars  ( int 5 ) > method getSonars  ( int 4 )] )
+		{
+		}
+		method turnAngle  ( int -90 );
+		else
+		{
+			method turnAngle  ( int 90 );
+		}
+	}
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+
+
+}
+

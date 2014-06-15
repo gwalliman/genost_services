@@ -1,0 +1,6 @@
+3-2-3_wait_ffa%{
+	method turnAngle  ( int 90 );
+
+
+}
+

@@ -1,0 +1,6 @@
+default_maze1%{
+	method driveDistance  ( int 52323552347545235465235554 );
+
+
+}
+

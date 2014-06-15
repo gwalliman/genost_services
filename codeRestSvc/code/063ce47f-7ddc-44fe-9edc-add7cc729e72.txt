@@ -1,0 +1,12 @@
+4-1-1_basic_if%{
+	if ( [ method getSonars  ( int 1 ) > int 50 ] )
+	{
+		method drive  ( string "f" );
+		method driveDistance  ( int 200 );
+		method drive  ( string "b" );
+		method driveDistance  ( int 200 );
+	}
+
+
+}
+

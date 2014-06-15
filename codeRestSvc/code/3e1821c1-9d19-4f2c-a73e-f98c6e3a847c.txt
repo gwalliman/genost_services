@@ -1,0 +1,15 @@
+1-4-2_catch_all%{
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 150 );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 90 );
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 150 );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 90 );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 150 );
+
+
+}
+

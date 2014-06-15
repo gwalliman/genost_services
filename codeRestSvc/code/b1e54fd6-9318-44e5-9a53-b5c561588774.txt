@@ -1,0 +1,9 @@
+3-2-3_wait_ffa%{
+	loopfor 4
+	{
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

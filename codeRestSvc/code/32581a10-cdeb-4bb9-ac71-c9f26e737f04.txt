@@ -1,0 +1,16 @@
+2-2-7_infinity_beyond%{
+	loopuntil ( [ method getSonars  ( int 5 ) < method getSonars  ( int 3 )] )
+	{
+		method driveDistance  ( int 132 );
+		method turnAngle  ( int 90 );
+		method driveDistance  ( int 132 );
+		method turnAngle  ( int -90 );
+		loopfor 4
+		{
+		}
+		method driveDistance  ( int 200 );
+	}
+
+
+}
+

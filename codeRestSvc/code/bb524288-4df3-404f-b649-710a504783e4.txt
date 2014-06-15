@@ -1,0 +1,14 @@
+default_maze1%{
+	method drive  ( string "f" );
+	if ( [ [ method getSonars  ( int 1 ) < method getSonars  ( int 4 )]  or [ method getSonars  ( int 3 ) < method getSonars  ( int 5 )] ] )
+	{
+		method turnAngle  ( int -90 );
+	}
+	else
+	{
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

@@ -1,0 +1,17 @@
+4-1-2_if_only%{
+	loopfor 2
+	{
+		if ( [ method getSonars  ( int 4 ) < int 32 ] )
+		{
+			method drive  ( string "f" );
+			waituntil ( [ method getSonars  ( int 1 ) > int 32 ] );
+		}
+	}
+	method turnAngle  ( int -180 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 3 ) > int 32 ] );
+	method turnAngle  ( int 90 );
+
+
+}
+

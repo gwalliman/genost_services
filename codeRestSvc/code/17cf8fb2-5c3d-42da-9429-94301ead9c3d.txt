@@ -1,0 +1,7 @@
+4-2-3_complex_logic%{
+	method drive  ( string "f" );
+	waituntil ( [ [ method getSonars  ( int 1 ) < int 32 ]  or [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] ] );
+
+
+}
+

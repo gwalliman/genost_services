@@ -1,0 +1,19 @@
+4-3-2_right_wall_follow%{
+	method turnAngle  ( int -90 );
+	loopfor -1
+	{
+		method driveDistance  ( int 32 );
+		if ( [ method getSonars  ( int 3 ) > int 32 ] )
+		{
+			method turnAngle  ( int -90 );
+			method driveDistance  ( int 32 );
+		}
+		elseif ( [ method getSonars  ( int 1 ) < int 32 ] )
+		{
+			method turnAngle  ( int 90 );
+		}
+	}
+
+
+}
+

@@ -1,0 +1,12 @@
+4-1-1_basic_if%{
+	if ( [ method getSonars  ( int 1 ) < int 32 ] )
+	{
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	}
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+
+
+}
+

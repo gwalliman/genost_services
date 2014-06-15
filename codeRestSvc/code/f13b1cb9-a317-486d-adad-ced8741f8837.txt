@@ -1,0 +1,19 @@
+4-2-3_complex_logic%{
+	if ( [ [ method getSonars  ( int 1 ) > method getSonars  ( int 5 )]  and [ method getSonars  ( int 1 ) > method getSonars  ( int 3 )] ] )
+	{
+		method turnAngle  ( int 0 );
+	}
+	elseif ( [ [ method getSonars  ( int 5 ) > method getSonars  ( int 1 )]  and [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] ] )
+	{
+		method turnAngle  ( int -90 );
+	}
+	else
+	{
+		method turnAngle  ( int 90 );
+	}
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+
+
+}
+

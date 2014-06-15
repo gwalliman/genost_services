@@ -1,0 +1,20 @@
+4-2-3_complex_logic%{
+	method drive  ( string "f" );
+	if ( [ method getSonars  ( int 1 ) > method getSonars  ( int 3 )] )
+	{
+		method drive  ( string "f" );
+	}
+	elseif ( [ method getSonars  ( int 3 ) > method getSonars  ( int 1 )] )
+	{
+		method turnAngle  ( int 90 );
+		method drive  ( string "f" );
+	}
+	else
+	{
+		method turnAngle  ( int -90 );
+		method drive  ( string "f" );
+	}
+
+
+}
+

@@ -1,0 +1,14 @@
+1-4-1_navigate_maze%{
+	method driveDistance  ( int 200 );
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 150 );
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 155 );
+	method turnAngle  ( int 180 );
+	method driveDistance  ( int 150 );
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 200 );
+
+
+}
+

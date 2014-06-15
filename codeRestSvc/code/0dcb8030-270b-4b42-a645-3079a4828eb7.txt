@@ -1,0 +1,17 @@
+default_maze1%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	if ( [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] )
+	{
+		method turnAngle  ( int -90 );
+	}
+	else
+	{
+		method turnAngle  ( int 90 );
+	}
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 50 ] );
+
+
+}
+

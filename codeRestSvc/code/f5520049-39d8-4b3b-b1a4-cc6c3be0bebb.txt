@@ -1,0 +1,11 @@
+3-2-1_intro_wait_for%{
+	loopuntil ( [ method getSonars  ( int 3 ) > int 256 ] )
+	{
+		method driveDistance  ( int 32 );
+	}
+	method turnAngle  ( int 90 );
+	method driveDistance  ( int 256 );
+
+
+}
+

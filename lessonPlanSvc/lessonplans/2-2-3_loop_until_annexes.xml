@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BlockDefinitions>
+  <Package name ="DATA">
+    <Block>
+      <name>INT</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>INT</string>
+        <textbox>INT</textbox>
+      </contains>
+      <properties>
+        <color>239 228 176</color>
+        <isConstant>true</isConstant>
+        <hasSocks>true</hasSocks>
+        <returnType>INT</returnType>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="VARIABLES">
+    <Block>
+      <name>VARIABLE</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>var</string>
+        <string>varName</string>
+      </contains>
+      <properties>
+        <color>255 174 201</color>
+        <programOnly>true</programOnly>
+        <isCustom>true</isCustom>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="PARAMETERS">
+    <Block>
+      <name>PARAMETER</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>parType</string>
+        <string>parName</string>
+      </contains>
+      <properties>
+        <color>182 220 163</color>
+        <programOnly>true</programOnly>
+        <isCustom>true</isCustom>
+      </properties>
+    </Block>
+    <Block>
+      <name>RETURN</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>RETURN</string>
+        <!--<string>parType</string>-->
+        <socket>VARIABLE/METHOD/CONSTANT/PARAMETER</socket>
+      </contains>
+      <properties>
+        <color>182 220 163</color>
+        <programOnly>true</programOnly>
+        <hasSocks>true</hasSocks>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="METHODS">
+    <Block>
+      <name>METHOD</name>
+      <type>STATEMENT/PLUGIN</type>
+      <contains>
+        <string>method</string>
+        <string>methName</string>
+        <parameterList>SOCKET</parameterList>
+      </contains>
+      <properties>
+        <color>182 220 163</color>
+        <programOnly>true</programOnly>
+        <isCustom>true</isCustom>
+        <transformer>true</transformer>
+      </properties>
+    </Block>
+  </Package>
+  <Package name ="ROBOT DATA">
+    <Block>
+      <name>DIRECTION</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>DIRECTION</string>
+        <dropdown></dropdown>
+        <field>FORWARD</field>
+        <field>BACKWARD</field>
+        <field>FRONT</field>
+        <field>REAR</field>
+        <field>RIGHT</field>
+        <field>LEFT</field>
+      </contains>
+      <properties>
+        <color>250 170 247</color>
+        <isRobotConstant>true</isRobotConstant>
+        <robotOnly>true</robotOnly>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="DRIVE">
+    <block>
+      <name>DRIVEDISTANCE</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>DRIVE&#13;DISTANCE</string>
+        <socket>INT</socket>
+      </contains>
+      <properties>
+        <color>249 243 127</color>
+        <robotOnly>true</robotOnly>
+        <hasSocks>true</hasSocks>
+      </properties>
+    </block>
+  </Package>
+  <Package name="TURN">
+    <block>
+      <name>TURNDEGREES</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>TURN&#13;DEGREES</string>
+        <socket>INT</socket>
+      </contains>
+      <properties>
+        <color>249 243 127</color>
+        <robotOnly>true</robotOnly>
+        <hasSocks>true</hasSocks>
+      </properties>
+    </block>
+  </Package>
+  <Package name ="GET DISTANCE">
+    <block>
+      <name>CHECKRANGE</name>
+      <type>PLUGIN</type>
+      <contains>
+        <string>DISTANCE</string>
+        <socket>DIRECTION</socket>
+      </contains>
+      <properties>
+        <color>249 243 127</color>
+        <robotOnly>true</robotOnly>
+        <isConstant>true</isConstant>
+        <hasSocks>true</hasSocks>
+        <returnType>INT</returnType>
+      </properties>
+    </block>
+  </Package>
+  <Package name="LOOP">
+	<Block>
+      <name>LOOPUNTIL</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>LOOP UNTIL</string>
+        <socket>CONDITION</socket>
+      </contains>
+      <properties>
+        <color>81 200 152</color>
+        <requiresEndLoop>true</requiresEndLoop>
+        <beginIndent>true</beginIndent>
+        <hasSocks>true</hasSocks>
+        <printLiteral>true</printLiteral>
+      </properties>
+    </Block>
+    <Block>
+      <name>LOOPFOR</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>LOOP FOR&#13;(TIMES)</string>
+        <socket>VARIABLE/METHOD/CONSTANT/PARAMETER</socket>
+        <!--<string>TIMES</string>-->
+      </contains>
+      <properties>
+        <color>81 200 152</color>
+        <requiresEndLoop>true</requiresEndLoop>
+        <beginIndent>true</beginIndent>
+        <intDisabled>false</intDisabled>
+        <stringDisabled>true</stringDisabled>
+        <booleanDisabled>true</booleanDisabled>
+        <allowInfinity>true</allowInfinity>
+        <mustBePositive>true</mustBePositive>
+        <hasSocks>true</hasSocks>
+        <printLiteral>true</printLiteral>
+      </properties>
+    </Block>
+    <Block>
+      <name>ENDLOOP</name>
+      <type>STATEMENT</type>
+      <contains>
+        <string>END LOOP</string>
+      </contains>
+      <properties>
+        <color>81 200 152</color>
+        <endIndent>true</endIndent>
+        <programOnly>true</programOnly>
+      </properties>
+    </Block>
+  </Package>
+  <Package name="COMPARISON">
+    <Block>
+      <name>COMPARISON-less</name><!--<name>&#60;</name>-->
+      <type>PLUGIN</type>
+      <contains>
+        <socket>VARIABLE/METHOD/CONSTANT/PARAMETER</socket>
+        <string>&#60;</string>
+        <!--is less than-->
+        <socket>VARIABLE/METHOD/CONSTANT/PARAMETER</socket>
+      </contains>
+      <properties>
+        <color>164 252 242</color>
+        <socketsMustMatch>true</socketsMustMatch>
+        <intDisabled>false</intDisabled>
+        <stringDisabled>true</stringDisabled>
+        <booleanDisabled>true</booleanDisabled>
+        <isCondition>true</isCondition>
+        <hasSocks>true</hasSocks>
+        <transformer>true</transformer>
+      </properties>
+    </Block>
+  </Package>
+  <mazeid>2-2-3_loop_until_annexes</mazeid>
+</BlockDefinitions>
+
+
+
+<!--
+Notes:
+BlockDefinitions is the root of the tree. From there, we define packages, and blocks inside those packages.
+Blocks contain a name, type, contains element, and properties element. 
+  -Name is a string representing the block in the program.
+  -Type is either STATEMENT or PLUGIN, and determines broadly where it can be placed in the program.
+  -Contains holds the list of displayed elements of the block. E.g. in an if block, it'd have the prompt "If", followed by the sockets for a conditional.
+    -socket elements contain a string representing what is allowed in them (e.g. VARIABLE, or VARIABLE/METHOD/CONSTANT)
+  -Properties holds various data or true/false flags. This determines aspects like limiting its behavior, or refining where it can be placed, etc.
+    -Ideally properties should all be optional, except for maybe the block's display color. 
+    
+    
+-motorfunctions is a placeholder, sensor functions are TBD
+-->

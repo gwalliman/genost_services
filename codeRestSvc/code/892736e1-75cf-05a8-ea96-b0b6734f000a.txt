@@ -1,0 +1,6 @@
+2-1-1_loopy_corners%{
+	method turnAngle  ( int 60 );
+
+
+}
+

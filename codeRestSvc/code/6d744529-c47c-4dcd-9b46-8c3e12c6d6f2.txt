@@ -1,0 +1,7 @@
+3-2-2_wait_for_test%{
+	method drive  ( string "f" );
+	waitfor 8;
+
+
+}
+

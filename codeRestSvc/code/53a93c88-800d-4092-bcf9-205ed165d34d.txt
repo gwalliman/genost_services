@@ -1,0 +1,22 @@
+4-2-1_basic_else_if%{
+	if ( [ method getSonars  ( int 1 ) > int 100 ] )
+	{
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	}
+	elseif ( [ method getSonars  ( int 3 ) > int 100 ] )
+	{
+		method turnAngle  ( int 90 );
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	}
+	else
+	{
+		method turnAngle  ( int -90 );
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	}
+
+
+}
+

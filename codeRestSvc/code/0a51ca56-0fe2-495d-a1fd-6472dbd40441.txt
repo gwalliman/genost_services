@@ -1,0 +1,18 @@
+4-1-3_basic_if_else%{
+	method drive  ( string "f" );
+	if ( [ method getSonars  ( int 3 ) > int 150 ] )
+	{
+		method turnAngle  ( int 90 );
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) < int 20 ] );
+	}
+	else
+	{
+		method turnAngle  ( int -90 );
+		method drive  ( string "f" );
+		waituntil ( [ method getSonars  ( int 1 ) < int 20 ] );
+	}
+
+
+}
+

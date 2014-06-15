@@ -1,0 +1,12 @@
+default_maze1%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 142 ] );
+	method turnAngle  ( int -90 );
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 32 ] );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 64 );
+
+
+}
+

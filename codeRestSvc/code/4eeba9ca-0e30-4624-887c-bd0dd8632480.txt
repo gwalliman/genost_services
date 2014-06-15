@@ -1,0 +1,7 @@
+default_maze1%{
+	waituntil ( [ method getSonars  ( int 3 ) > method getSonars  ( int 5 )] );
+	method turnAngle  ( int 90 );
+
+
+}
+

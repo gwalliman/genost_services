@@ -1,0 +1,9 @@
+default_maze1%{
+	loopfor 4
+	{
+		method turnAngle  ( int 90 );
+	}
+
+
+}
+

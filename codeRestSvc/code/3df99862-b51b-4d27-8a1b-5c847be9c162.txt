@@ -1,0 +1,6 @@
+4-2-1_basic_else_if%{
+	waituntil ( [ [ method getSonars  ( int 1 ) < int 32 ]  or [ method getSonars  ( int 5 ) > method getSonars  ( int 3 )] ] );
+
+
+}
+

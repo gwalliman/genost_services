@@ -1,0 +1,12 @@
+3-1-2_carry_wait%{
+	method drive  ( string "f" );
+	waituntil ( [ method getSonars  ( int 1 ) < int 50 ] );
+	method stop ();
+	method turnAngle  ( int 180 );
+	method driveDistance  ( int 150 );
+	method turnAngle  ( int -90 );
+	method driveDistance  ( int 200 );
+
+
+}
+

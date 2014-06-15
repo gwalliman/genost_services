@@ -1,0 +1,7 @@
+default_maze1%{
+	method driveDistance  ( int 22 );
+	method turnAngle  ( int 90 );
+
+
+}
+
